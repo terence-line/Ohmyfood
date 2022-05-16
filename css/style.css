@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+    /* box-sizing est appliqué à tous les éléments */
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#bloc_page h1 {
+    font-family: 'Shrikhand', cursive;
+}
+
+#bloc_page h2 {
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+#bloc_page h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+:root {
+    --gris-clair: #F2F2F2;
+    --gris: #e6e6e6;
+    --couleur-primaire: #9356DC;
+    --couleur-secondaire: #FF79DA;
+    --couleur-tertiaire: #99E2D0;
+    --vert: #2d9f83;
+    --blanc: #FFFFFF;
+    --noir: #000000;
+    --noir-light: #333333;
+    --rose: #ffe6ff;
+}
+
+#bloc_page {
+    min-width: 300px;
+    max-width: 767px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+#logo {
+    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* presentation */
+
+.presentation {
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    background: var(--gris);   
+    border-top: 4px inset rgba(128, 128, 128, 0.3);
+}
+.presentation i {
+    color: var(--noir);
+}
+
+.presentation button, input {
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background: var(--gris);
+    padding: 15px;
+}
+
+.presentation input {
+    padding-left: 10px;
+    width: 150px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.texte {
+    line-height: 20px;
+    background: var(--gris-clair);
+    text-align: center;
+    padding-top: 20px;
+    height: 240px;
+}
+.texte p {
+    padding-left: 20px;
+    padding-bottom: 30px;
+    font-size: 16px;  
+}
+
+.texte .explorer {
+    background: linear-gradient(to bottom, var(--couleur-secondaire) 20%, var(--couleur-primaire) 100%);
+}
+
+.texte strong {
+    font-size: 25px;
+}
+
+aside .explorer {
+    width: 190px;
+    padding: 10px 0;
+    border-radius: 25px;
+    background: var(--couleur-secondaire);
+    border: none;
+    color: var(--blanc);
+    cursor: pointer;    
+}
+
+/* fonctionnement */
+
+.fonctionnement {
+    margin: 30px 20px 0 20px;
+}
+
+.filtres {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.filtres a {
+    text-decoration: none;
+    color: var(--noir);
+    font-size: 16px;  
+    cursor: pointer;  
+}
+
+.filtres .icon1 {
+    position: absolute;
+    left: -10px;
+    bottom: 11px;
+    padding: 5px 8px;
+    background: var(--couleur-primaire);
+    color: var(--blanc);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.filtres .icon2 {
+    margin-left: 20px;
+    position: absolute;
+    left: 30px;  
+}
+
+.filtres .icon2:hover {
+    color: var(--couleur-primaire);
+}
+
+.choisir, .composer, .deguster {
+    position: relative;
+    background: var(--gris-clair);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 5px 2px rgba(158,158,158,0.5);
+    margin-bottom: 20px; 
+}
+
+.choisir:hover, .composer:hover, .deguster:hover {
+    background: rgba(242, 242, 242, 0.5);
+    box-shadow: 2px 4px 5px 2px rgba(158, 158, 158, 0.7);
+}
+
+/* restaurants */
+
+#restaurants {
+    height: 1200px;
+    background: var(--gris-clair);
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 40px; 
+    gap: 15px;  
+}
+
+#restaurants h2 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.cartes {
+    height: 240px;
+    border-radius: 15px;
+    background: var(--blanc);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 5px 0px rgba(158, 158, 158, 1);
+}
+
+.cartes a {
+    text-decoration: none;
+    color: var(--noir);
+}
+
+/* carte image restaurants*/
+
+.carte_image {
+    height: 180px;
+    position: relative;
+    color: var(--vert);
+    font-weight: bold;
+}
+
+.carte_image img {
+    height: 95%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.carte_image p {
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background: var(--couleur-tertiaire);
+}
+
+/* carte texte restaurants*/
+
+.carte_texte {
+    padding-left: 10px;
+    line-height: 25px;
+}
+
+.carte_texte i {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.carte_texte i:hover {
+    background-color: var(--couleur-secondaire)!important;
+}
+
+/* footer */
+
+#footer {
+    background: var(--noir-light);
+    color: var(--blanc);
+    padding: 20px 0px 30px 0;
+    width: 100%;
+}
+
+#footer h1 {
+    padding-bottom: 15px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: var(--blanc);
+    line-height: 25px;
+}
+
+#footer ul {
+    padding-left: 20px;
+}
+
+#footer li {
+    list-style: none;
+}
+
+#footer i {
+    padding-right: 30px;
+    height: 10px;
+    width: 10px;
+}
+
+/* pages menu */
+
+/* header */
+header a {
+    color: var(--noir);
+}
+
+header i {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    margin-left: 30px;
+}
+
+/* photo restaurant */
+
+.photo_restaurant {
+    height: 450px;
+    width: 100%;
+}
+
+.photo_restaurant img {
+    height: 100%;
+    width: 100%;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+/* menu */
+
+#menu {
+    background: var(--gris-clair);
+    height: 1220px;
+    border-radius: 40px 40px 0 0;
+    margin-top: -100px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+/* nom restaurant */
+
+.nom h1 {
+    font-size: 25px;
+}
+
+.nom i{
+    float: right;
+    margin-right: 40px;
+    margin-top: -20px;
+}
+
+/* entrées, plats, desserts */
+
+#entrees, #plats, #desserts {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--couleur-tertiaire);
+    width: 50px;
+}
+
+/* détails menu */
+
+.details_menu {
+    margin-top: 15px;
+    background: var(--blanc);
+    margin-right: 20px;
+    padding: 15px 0 15px 10px;
+    line-height: 23px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px 0px rgba(158, 158, 158, 1);
+}
+
+.details_menu a {
+    text-decoration: none;
+    color: var(--noir);
+    position: relative;
+}
+
+.details_menu span {
+    position: absolute;
+    float: right;
+    font-weight: bold;
+    right: 20px;
+    bottom: 0;
+}
+
+/* bouton commander */
+
+.commander {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.commander .bouton {
+    border: none;
+    width: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+    color: var(--blanc);
+    background: linear-gradient(to bottom, var(--couleur-secondaire) 20%, var(--couleur-primaire) 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
