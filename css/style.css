@@ -31,7 +31,7 @@ html, body {
     --blanc: #FFFFFF;
     --noir: #000000;
     --noir-light: #333333;
-    --rose: #ffe6ff;
+    --rose: #F3E5F5;
 }
 
 #bloc_page {
@@ -42,7 +42,7 @@ html, body {
     flex-direction: column;
 }
 
-/* loader */
+/* loader *
 
 #loader {
     position: absolute;
@@ -89,7 +89,6 @@ html, body {
     }
 }
 
-
 /* header */
 
 header {
@@ -116,7 +115,7 @@ header {
     color: var(--noir);
 }
 
-.presentation button, input {
+.presentation .button, input {
     border: none !important;
     outline:none;
     font-size: 15px;
@@ -169,59 +168,51 @@ aside .explorer {
     margin: 30px 20px 0 20px;
 }
 
-.filtres {
-    text-align: center;
+.fonctionnement button {
+    display: block;
+    border: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    margin-bottom: 15px;
     margin-top: 20px;
-}
-
-.filtres a {
-    text-decoration: none;
-    color: var(--noir);
-    font-size: 16px;  
-    cursor: pointer;  
-}
-
-.filtres i {
-    height: 15px;
-    width: 15px;
-}
-
-.filtres .icon1 {
-    position: absolute;
-    height: 20px;
-    height: 20px;
-    left: -10px;
-    bottom: 11px;
-    padding: 5px 8px;
-    background: var(--couleur-primaire);
-    color: var(--blanc);
-    border-radius: 50%;
-    text-align: center;
-}
-
-.filtres .icon2 {
-    margin-left: 20px;
-    position: absolute;
-    left: 30px;  
-}
-
-.filtres .icon2:hover {
-    color: var(--couleur-primaire);
-}
-
-.choisir, .composer, .deguster {
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    height: 70px;
     position: relative;
-    background: var(--gris-clair);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 15px;
-    box-shadow: 2px 4px 5px 2px rgba(158,158,158,0.5);
-    margin-bottom: 20px; 
+    box-shadow: 1px 2px 5px 0px rgba(158, 158, 158, 1);
 }
 
-.choisir:hover, .composer:hover, .deguster:hover {
-    background: rgba(242, 242, 242, 0.5);
-    box-shadow: 2px 4px 5px 2px rgba(158, 158, 158, 0.7);
+.fonctionnement button i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 25px;
+}
+
+.fonctionnement button span:last-child {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: var(--couleur-primaire);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 12px;
+    position: absolute;
+    top: 30%;
+    left: -10px;
+    transform: translate(-50%, -50%, 0);
+}
+
+.fonctionnement button:hover {
+    background: var(--rose);
+}
+
+.fonctionnement button:hover i path {
+    fill: var(--couleur-primaire);
 }
 
 /* restaurants */
