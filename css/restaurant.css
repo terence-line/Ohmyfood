@@ -45,6 +45,19 @@ body {
 }
 
 /* header */
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+#logo {
+    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    height: auto;
+}
+
 header a {
     color: var(--noir);
 }
@@ -151,4 +164,39 @@ header i {
     border-radius: 25px;
     color: var(--blanc);
     background: linear-gradient(to bottom, var(--couleur-secondaire) 20%, var(--couleur-primaire) 100%);
+}
+
+/* footer */
+
+#footer {
+    background: var(--noir-light);
+    color: var(--blanc);
+    padding: 20px 0px 30px 0;
+    width: 100%;
+}
+
+#footer h1 {
+    padding-bottom: 15px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: var(--blanc);
+    line-height: 25px;
+}
+
+#footer ul {
+    padding-left: 20px;
+}
+
+#footer li {
+    list-style: none;
+}
+
+#footer i {
+    padding-right: 30px;
+    height: 10px;
+    width: 10px;
 }
