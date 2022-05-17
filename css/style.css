@@ -199,7 +199,7 @@ aside .explorer {
     background: var(--couleur-primaire);
     color: #ffffff;
     text-align: center;
-    padding-top: 4px;
+    padding-top: 2px;
     border-radius: 12px;
     position: absolute;
     top: 30%;
@@ -211,7 +211,7 @@ aside .explorer {
     background: var(--rose);
 }
 
-.fonctionnement button:hover i path {
+.fonctionnement button:hover i {
     fill: var(--couleur-primaire);
 }
 
