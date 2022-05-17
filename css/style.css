@@ -183,7 +183,6 @@ aside .explorer {
     position: relative;
     box-shadow: 1px 2px 5px 0px rgba(158, 158, 158, 1);
 }
-
 .fonctionnement button i {
     display: inline-block;
     width: 20px;
@@ -212,7 +211,7 @@ aside .explorer {
 }
 
 .fonctionnement button:hover i {
-    fill: var(--couleur-primaire);
+    color: var(--couleur-primaire);
 }
 
 /* restaurants */
