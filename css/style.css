@@ -35,7 +35,6 @@ html, body {
 }
 
 #bloc_page {
-    min-width: 300px;
     max-width: 767px;
     height: 100%;
     margin: 0 auto;
@@ -43,6 +42,54 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+
+/* loader */
+
+#loader {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid var(--couleur-primaire);
+    border-right: 16px solid var(--couleur-secondaire);
+    border-bottom: 16px solid var(--couleur-tertiaire);
+    animation: spin 2s linear 2s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
 
 /* header */
 
@@ -55,6 +102,7 @@ header {
     width: 40%;
     padding-top: 20px;
     padding-bottom: 10px;
+    height: auto;
 }
 
 /* presentation */
@@ -71,7 +119,8 @@ header {
 }
 
 .presentation button, input {
-    border: none;
+    border: none !important;
+    outline:none;
     font-size: 15px;
     cursor: pointer;
     background: var(--gris);
@@ -90,6 +139,7 @@ header {
     text-align: center;
     padding-top: 20px;
     height: 240px;
+    font-weight: bold;
 }
 .texte p {
     padding-left: 20px;
@@ -133,8 +183,15 @@ aside .explorer {
     cursor: pointer;  
 }
 
+.filtres i {
+    height: 15px;
+    width: 15px;
+}
+
 .filtres .icon1 {
     position: absolute;
+    height: 20px;
+    height: 20px;
     left: -10px;
     bottom: 11px;
     padding: 5px 8px;
@@ -172,7 +229,6 @@ aside .explorer {
 /* restaurants */
 
 #restaurants {
-    height: 1200px;
     background: var(--gris-clair);
     width: 100%;
     margin-top: 30px;
@@ -294,13 +350,14 @@ header i {
 /* photo restaurant */
 
 .photo_restaurant {
-    height: 450px;
+    height: 400px;
     width: 100%;
 }
 
 .photo_restaurant img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .overflow {
@@ -370,6 +427,7 @@ header i {
 .commander {
     margin-top: 40px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .commander .bouton {
