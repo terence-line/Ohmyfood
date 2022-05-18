@@ -157,6 +157,7 @@ header i {
     border-radius: 25px;
     color: var(--blanc);
     background: linear-gradient(to bottom, var(--couleur-secondaire) 20%, var(--couleur-primaire) 100%);
+    box-shadow: 3px 6px 10px rgba(128, 128, 128, 0.5);
 }
 
 /* footer */
