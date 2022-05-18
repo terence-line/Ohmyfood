@@ -104,15 +104,12 @@ header {
 
 /* presentation */
 
-#bloc_presentation {
-    background: var(--gris-clair);
-
-}
-
 .presentation {
     justify-content: center;
     align-items: center;
     text-align: center; 
+    background: var(--gris);
+    border-top: 4px solid rgba(198, 187, 187, 0.45);
 }
 
 .presentation i {
@@ -128,7 +125,7 @@ header {
 }
 
 .recherche_ville {
-    background: var(--gris-clair);
+    background: var(--gris);
 }
 
 .presentation input {
@@ -143,7 +140,9 @@ header {
     padding-top: 20px;
     height: 240px;
     font-weight: bold;
+    background: var(--gris-clair);
 }
+
 .texte p {
     padding-left: 20px;
     padding-bottom: 30px;
