@@ -154,6 +154,11 @@ header {
     box-shadow: 3px 6px 10px rgba(128, 128, 128, 0.5);
 }
 
+.texte .explorer:hover {
+    background: linear-gradient(to bottom, #ff99e5 20%, #ad80e5 100%);
+    box-shadow: 3px 6px 10px rgba(128, 128, 128, 1);
+}
+
 .texte strong {
     font-size: 25px;
 }
