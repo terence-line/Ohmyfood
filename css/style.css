@@ -104,15 +104,19 @@ header {
 
 /* presentation */
 
+#bloc_presentation {
+    background: var(--gris-clair);
+
+}
+
 .presentation {
     justify-content: center;
     align-items: center;
-    text-align: center;    
-    background: var(--gris);   
-    border-top: 4px inset rgba(128, 128, 128, 0.3);
+    text-align: center; 
 }
+
 .presentation i {
-    color: var(--noir);
+    color: var(--noir);   
 }
 
 .presentation .button, input {
@@ -120,8 +124,11 @@ header {
     outline:none;
     font-size: 15px;
     cursor: pointer;
-    background: var(--gris);
-    padding: 15px;
+    padding: 15px;  
+}
+
+.recherche_ville {
+    background: var(--gris-clair);
 }
 
 .presentation input {
@@ -132,7 +139,6 @@ header {
 
 .texte {
     line-height: 20px;
-    background: var(--gris-clair);
     text-align: center;
     padding-top: 20px;
     height: 240px;
@@ -181,7 +187,7 @@ aside .explorer {
     cursor: pointer;
     height: 70px;
     position: relative;
-    box-shadow: 1px 2px 5px 0px rgba(158, 158, 158, 1);
+    box-shadow: 3px 6px 10px  rgba(128, 128, 128, 0.5);
 }
 .fonctionnement button i {
     display: inline-block;
