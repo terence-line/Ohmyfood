@@ -60,10 +60,10 @@ html, body {
     align-items: center;
     z-index: 1;
     opacity: 1;
-    animation: disparaître 0.2s;
+    animation: disparaître 0.1s;
     animation-fill-mode: forwards;
     animation-delay: 3s;
-    transform-origin: top;
+    transform-origin: center;
 }
 
 @keyframes disparaître {
