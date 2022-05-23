@@ -321,22 +321,20 @@ aside .explorer {
     line-height: 25px;
 }
 
-.icon_heart {
+.fa-regular {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.fa-heart {
     float: right;
     margin-right: 20px;
     margin-bottom: 15px;
 }
+  
 
-.icon_heart i:hover {
-    background: linear-gradient(to bottom, #ff99e5 20%, #ad80e5 100%);    
-}
-
-.progress_heart {
-    transform-origin: bottom;
-    transform: scale(0.5);
-    animation: progress_heart 1000ms 1000ms both cubic-bezier(.9,0,.1,1);
-    
-}
 
 
 
