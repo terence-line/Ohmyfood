@@ -42,22 +42,74 @@ html, body {
     flex-direction: column;
 }
 
-/* loader *
+/* loader */
 
-#loader {
-    position: absolute;
-    left: 45%;
-    top: 50%;
+.loader_conteneur {
+    display: block;
+    position: fixed;
+    background: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
-    width: 200px;
-    height: 200px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
+    opacity: 1;
+    animation: disparaître 0.2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    transform-origin: top;
+}
+
+@keyframes disparaître {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.loader {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    border-top: 16px solid var(--couleur-primaire);
-    border-right: 16px solid var(--couleur-secondaire);
-    border-bottom: 16px solid var(--couleur-tertiaire);
-    animation: spin 2s linear 2s;
+    border: 7px solid transparent;
+    border-top-color: var(--couleur-primaire);
+    animation: spin 2s linear infinite;
+}
+
+.loader::before, .loader::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 7px solid transparent;
+}
+
+.loader::before {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top-color: var(--couleur-secondaire);
+    animation: spin 3s linear infinite;
+}
+
+.loader::after {
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    border-top-color: var(--couleur-tertiaire);
+    animation: spin 1.5s linear infinite;
 }
 
 @keyframes spin {
@@ -67,25 +119,6 @@ html, body {
 
     100% {
         transform: rotate(360deg);
-    }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-    position: relative;
-    animation-name: animatebottom;
-    animation-duration: 1s
-}
-
-@keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0;
-        opacity: 1
     }
 }
 
@@ -288,15 +321,24 @@ aside .explorer {
     line-height: 25px;
 }
 
-.carte_texte i {
+.icon_heart {
     float: right;
     margin-right: 20px;
     margin-bottom: 15px;
 }
 
-.carte_texte i:hover {
-    background-color: var(--couleur-secondaire)!important;
+.icon_heart i:hover {
+    background: linear-gradient(to bottom, #ff99e5 20%, #ad80e5 100%);    
 }
+
+.progress_heart {
+    transform-origin: bottom;
+    transform: scale(0.5);
+    animation: progress_heart 1000ms 1000ms both cubic-bezier(.9,0,.1,1);
+    
+}
+
+
 
 /* footer */
 
