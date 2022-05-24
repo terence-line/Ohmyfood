@@ -36,6 +36,7 @@ html, body {
 }
 
 #bloc_page {
+    min-width: 300px;
     max-width: 767px;
     margin: 0 auto;
     padding: 0;
