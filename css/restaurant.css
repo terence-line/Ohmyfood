@@ -32,6 +32,7 @@ html, body {
     --noir: #000000;
     --noir-light: #333333;
     --rose: #ffe6ff;
+    --gradient: linear-gradient(to bottom, var(--couleur-secondaire) 20%, var(--couleur-primaire) 100%);
 }
 
 #bloc_page {
@@ -108,7 +109,7 @@ header i {
     padding-top: 30px;
     padding-bottom: 5px;
     border-bottom: 3px solid var(--couleur-tertiaire);
-    width: 50px;
+    width: 50px;        
 }
 
 /* détails menu */
@@ -121,6 +122,23 @@ header i {
     line-height: 23px;
     border-radius: 15px;
     box-shadow: 3px 6px 10px rgba(128, 128, 128, 0.5);
+    
+    transform: scaleX(0);
+    animation: apparaître 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes apparaître {
+    0% {
+        transform: scale(0);
+    }
+    50%, {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .details_menu a {
@@ -135,6 +153,11 @@ header i {
     font-weight: bold;
     right: 20px;
     bottom: 0;
+}
+
+.case_a_cocher {
+    position: absolute;
+    float: right;
 }
 
 /* bouton commander */
@@ -154,7 +177,7 @@ header i {
     padding: 10px;
     border-radius: 25px;
     color: var(--blanc);
-    background: linear-gradient(to bottom, var(--couleur-secondaire) 20%, var(--couleur-primaire) 100%);
+    background: var(--gradient);
     box-shadow: 3px 6px 10px rgba(128, 128, 128, 0.5);
     transition: all 300ms;
 }
