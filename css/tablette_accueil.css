@@ -2,22 +2,27 @@
     #bloc_page {
         min-width: 768px;
         max-width: 991px;
-        flex-direction: row;
-        flex-wrap: nowrap;
 
     }
 
         /* fonctionnement */
-    
-        .fonctionnement button {
-            display: flex;
+
+        .conteneur_button {
             flex-direction: row;
-            flex-wrap: nowrap;
-            width: 25%;
-            height: 60px;
-            padding-left: 20px;
+            justify-content: space-around;
+            align-content: flex-start;
+            align-items: flex-start;
         }
-    }    
+    
+        .fonctionnement button{ 
+            margin-left: 10px;
+            width: 30%;
+        } 
+        
+        .fonctionnement button i {
+            margin-right: 15px;
+        }
+}
 
     
 

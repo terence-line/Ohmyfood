@@ -214,6 +214,12 @@ aside .explorer {
     margin: 30px 20px 0 20px;
 }
 
+.conteneur_button {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .fonctionnement button {
     display: block;
     border: none;
