@@ -121,23 +121,38 @@ header i {
     padding: 15px 0 15px 10px;
     line-height: 23px;
     border-radius: 15px;
-    box-shadow: 3px 6px 10px rgba(128, 128, 128, 0.5);
-    
-    transform: scaleX(0);
-    animation: apparaître 1s ease;
-    animation-fill-mode: forwards;
+    box-shadow: 3px 6px 10px rgba(128, 128, 128, 0.5);    
 }
 
-@keyframes apparaître {
-    0% {
-        transform: scale(0);
-    }
-    50%, {
-        transform: scale(0.5);
-    }
+.menu_entrees, .menu_plats, .menu_desserts {
+    cursor: pointer;
+    animation-name: slide;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
 
-    100% {
-        transform: scale(1);
+.menu_entrees {
+    animation-delay: 1s;
+}
+
+.menu_plats {    
+    animation-delay: 2s;    
+}
+
+.menu_desserts {    
+    animation-delay: 3s;
+}
+    
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -155,10 +170,8 @@ header i {
     bottom: 0;
 }
 
-.case_a_cocher {
-    position: absolute;
-    float: right;
-}
+
+
 
 /* bouton commander */
 
