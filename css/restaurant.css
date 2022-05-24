@@ -129,7 +129,7 @@ header i {
     animation-name: slide;
     animation-timing-function: ease;
     animation-fill-mode: both;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 .menu_entrees {
@@ -144,7 +144,6 @@ header i {
     animation-delay: 3s;
 }
     
-
 @keyframes slide {
     from {
         opacity: 0;
@@ -169,9 +168,6 @@ header i {
     right: 20px;
     bottom: 0;
 }
-
-
-
 
 /* bouton commander */
 

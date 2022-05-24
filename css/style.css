@@ -337,7 +337,7 @@ aside .explorer {
     right: 20px;
     margin-bottom: 15px;
     z-index: 2;
-    transition: var(--gradient) 250ms ease-out;
+    transition: var(--gradient) 250ms ease-in-out;
     transform-origin: bottom;
 }
 
@@ -346,14 +346,14 @@ aside .explorer {
 }
 
 .coeur_2 {
-    content: "";
+    
     position: absolute;
     z-index: 3;
     right: 20px;
     margin-bottom: 15px; 
     color: var(--gradient); 
     opacity: 0; 
-    transition: var(--gradient) 250ms ease-out;
+    transition: var(--gradient) 250ms ease-in-out;
   
 } 
 
