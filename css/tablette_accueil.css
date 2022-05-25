@@ -20,6 +20,21 @@
     .fonctionnement button i {
         margin-right: 10px;
     }
+
+    /* restaurants */
+
+    .conteneur_cartes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .cartes {
+        width: 45%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
 }
 
     
