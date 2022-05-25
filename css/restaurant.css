@@ -36,7 +36,8 @@ html, body {
 }
 
 #bloc_page {
-    max-width: 767px;
+    min-width: 767px;
+    max-width: 991px;
     margin: 0 auto;
     padding: 0;
     display: flex;
