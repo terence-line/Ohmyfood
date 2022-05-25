@@ -4,58 +4,53 @@
         max-width: 991px;
 
     }
-        /* logo */
+    /* logo */
+    #logo {
+        width: 30%;
+    }
 
-        #logo {
-            width: 30%;
-        }
-
-        /* presentation */
+    /* presentation */
+    .presentation .button, input {
+        font-size: 18px;
+    }
         
-        .presentation .button, input {
-            font-size: 18px;
-        }
-        
-        .presentation input {
-            width: 200px;
-        }
+    .presentation input {
+        width: 200px;
+    }
 
-        /* bouton explorer */
+    /* bouton explorer */
+    .texte .explorer {
+        font-size: 18px;
+        width: 30%;
+    }
+
+    /* fonctionnement */
+    .conteneur_button {
+        flex-direction: row;
+        justify-content: space-between;
+    }
     
-        .texte .explorer {
-            font-size: 18px;
-            width: 30%;
-        }
-
-        /* fonctionnement */
-
-        .conteneur_button {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    
-        .fonctionnement button{ 
-            margin-left: 5px;
-            width: 31%;
-        } 
+    .fonctionnement button{ 
+        margin-left: 5px;
+        width: 31%;
+    } 
         
-        .fonctionnement button i {
-            margin-right: 10px;
-        }
+    .fonctionnement button i {
+        margin-right: 10px;
+    }
 
-        /* restaurants */
+    /* restaurants */
+    .conteneur_cartes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-        .conteneur_cartes {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        .cartes {
-            width: 45%;
-            margin: 0 auto;
-            margin-bottom: 40px;
-        }
+    .cartes {
+        width: 45%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
 }
 
     

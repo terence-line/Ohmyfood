@@ -36,8 +36,8 @@ html, body {
 }
 
 #bloc_page {
-    min-width: 767px;
-    max-width: 991px;
+    min-width: 300px;
+    max-width: 767px;
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -45,7 +45,6 @@ html, body {
 }
 
 /* header */
-
 header {
     text-align: center;
     position: relative;
@@ -70,7 +69,6 @@ header i {
 }
 
 /* photo restaurant */
-
 .photo_restaurant {
     height: 400px;
     width: 100%;
@@ -83,7 +81,6 @@ header i {
 }
 
 /* menu */
-
 #menu {
     background: var(--gris-clair);
     border-radius: 40px 40px 0 0;
@@ -93,7 +90,6 @@ header i {
 }
 
 /* nom restaurant */
-
 .nom h1 {
     font-size: 25px;
 }
@@ -104,17 +100,15 @@ header i {
     margin-top: -20px;
 }
 
-/* entrées, plats, desserts */
-
-#entrees, #plats, #desserts {
+/* h2 entrées, plats, desserts */
+#conteneur_menu h2 {
     padding-top: 30px;
     padding-bottom: 5px;
     border-bottom: 3px solid var(--couleur-tertiaire);
-    width: 50px;        
+    width: 50px;
 }
 
 /* détails menu */
-
 .details_menu {
     margin-top: 15px;
     background: var(--blanc);
@@ -171,7 +165,6 @@ header i {
 }
 
 /* bouton commander */
-
 .commander {
     margin-top: 40px;
     text-align: center;
@@ -198,7 +191,6 @@ header i {
 }
 
 /* footer */
-
 #footer {
     background: var(--noir-light);
     color: var(--blanc);
