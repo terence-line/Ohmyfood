@@ -1,7 +1,31 @@
 @media screen and (min-width: 992px) {
     #bloc_page {
         min-width: 992px;
-        max-width: 1500px;
+        max-width: 1440px;
+    }
+
+    /* bouton explorer */
+
+    .texte .explorer{
+        font-size: 18px;
+        width: 20%;
+    }
+
+    .fonctionnement button{
+        width: 25%;
+        margin-right: 100px;
+    }
+
+    .fonctionnement button i {
+        margin-right: 30px;
+    }
+
+    .cartes {
+        height: 300px;
+    }
+
+    .carte_image {
+        height: 230px;
     }
 
 }
