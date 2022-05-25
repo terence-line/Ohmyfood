@@ -4,37 +4,58 @@
         max-width: 991px;
 
     }
+        /* logo */
 
-    /* fonctionnement */
+        #logo {
+            width: 30%;
+        }
 
-    .conteneur_button {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .fonctionnement button{ 
-        margin-left: 5px;
-        width: 31%;
-    } 
+        /* presentation */
         
-    .fonctionnement button i {
-        margin-right: 10px;
-    }
+        .presentation .button, input {
+            font-size: 18px;
+        }
+        
+        .presentation input {
+            width: 200px;
+        }
 
-    /* restaurants */
+        /* bouton explorer */
+    
+        .texte .explorer {
+            font-size: 18px;
+            width: 30%;
+        }
 
-    .conteneur_cartes {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        /* fonctionnement */
 
-    }
+        .conteneur_button {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .fonctionnement button{ 
+            margin-left: 5px;
+            width: 31%;
+        } 
+        
+        .fonctionnement button i {
+            margin-right: 10px;
+        }
 
-    .cartes {
-        width: 45%;
-        margin: 0 auto;
-        margin-bottom: 40px;
-    }
+        /* restaurants */
+
+        .conteneur_cartes {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .cartes {
+            width: 45%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
 }
 
     

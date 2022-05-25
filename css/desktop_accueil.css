@@ -3,29 +3,24 @@
         min-width: 992px;
         max-width: 1440px;
     }
+    
+        /* fonctionnement */
 
-    /* bouton explorer */
+        .fonctionnement button{
+            width: 31%;
+        }
 
-    .texte .explorer{
-        font-size: 18px;
-        width: 20%;
-    }
+        .fonctionnement button i {
+            margin-right: 20px;
+        }
 
-    .fonctionnement button{
-        width: 25%;
-        margin-right: 100px;
-    }
+        .cartes {
+            height: 280px;
+            width: 22%;
+        }
 
-    .fonctionnement button i {
-        margin-right: 30px;
-    }
-
-    .cartes {
-        height: 300px;
-    }
-
-    .carte_image {
-        height: 230px;
-    }
+        .carte_image {
+            height: 220px;
+        }
 
 }
