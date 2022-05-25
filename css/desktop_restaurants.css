@@ -4,5 +4,32 @@
         max-width: 1440px;
     }
 
+    /* photo restaurant */
+    .photo_restaurant {
+        height: 600px;
+    }
+
+    /* menu */
+    #menu {
+        margin-top: -40px;
+    }
+
+    #conteneur_menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .details_menu {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .menu_entrees, .menu_plats, .menu_desserts {
+        width: 30%;
+    }
+
+    .commander {
+        margin-bottom: 70px;
+    }
     
 }
