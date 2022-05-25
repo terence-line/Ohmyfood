@@ -5,23 +5,21 @@
 
     }
 
-        /* fonctionnement */
+    /* fonctionnement */
 
-        .conteneur_button {
-            flex-direction: row;
-            justify-content: space-around;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
+    .conteneur_button {
+        flex-direction: row;
+        justify-content: space-between;
+    }
     
-        .fonctionnement button{ 
-            margin-left: 10px;
-            width: 30%;
-        } 
+    .fonctionnement button{ 
+        margin-left: 5px;
+        width: 31%;
+    } 
         
-        .fonctionnement button i {
-            margin-right: 15px;
-        }
+    .fonctionnement button i {
+        margin-right: 10px;
+    }
 }
 
     
