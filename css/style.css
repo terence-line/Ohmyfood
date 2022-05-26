@@ -248,7 +248,6 @@ aside .explorer {
     position: absolute;
     top: 30%;
     left: -10px;
-    transform: translate(-50%, -50%, 0);
 }
 
 .fonctionnement button:hover {
@@ -337,7 +336,7 @@ aside .explorer {
     position: absolute;
     z-index: 2;
     right: 20px;
-    color: var(--gradient);
+    color: var(--couleur-secondaire);
     margin-bottom: 15px; 
     opacity: 0; 
 } 
