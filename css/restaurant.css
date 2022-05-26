@@ -119,7 +119,7 @@ header i {
     box-shadow: 3px 6px 10px rgba(128, 128, 128, 0.5);    
 }
 
-.menu_entrees, .menu_plats, .menu_desserts {
+.details_menu {
     cursor: pointer;
     animation-name: slide;
     animation-timing-function: ease;
@@ -127,15 +127,15 @@ header i {
     animation-duration: 2s;
 }
 
-.menu_entrees {
+.menu_entrees .details_menu {
     animation-delay: 1s;
 }
 
-.menu_plats {    
+.menu_plats .details_menu {    
     animation-delay: 2s;    
 }
 
-.menu_desserts {    
+.menu_desserts .details_menu {    
     animation-delay: 3s;
 }
     
