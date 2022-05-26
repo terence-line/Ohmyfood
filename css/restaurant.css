@@ -116,10 +116,7 @@ header i {
     padding: 15px 0 15px 10px;
     line-height: 23px;
     border-radius: 15px;
-    box-shadow: 3px 6px 10px rgba(128, 128, 128, 0.5);    
-}
-
-.details_menu {
+    box-shadow: 3px 6px 10px rgba(128, 128, 128, 0.5); 
     cursor: pointer;
     animation-name: slide;
     animation-timing-function: ease;
