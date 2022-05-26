@@ -100,6 +100,33 @@ header i {
     margin-top: -20px;
 }
 
+/* icon coeur */
+.coeur_1 {
+    position: absolute;
+    right: 20px;
+    margin-bottom: 15px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.coeur_1:hover {
+    opacity: 0;
+}
+
+.coeur_2 {
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    color: var(--couleur-secondaire);
+    margin-bottom: 15px;
+    opacity: 0;
+}
+
+.coeur_2:hover {
+    opacity: 1;
+    transition: 400ms ease-in-out;
+}
+
 /* h2 entrées, plats, desserts */
 #conteneur_menu h2 {
     padding-top: 30px;
