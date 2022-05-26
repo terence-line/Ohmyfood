@@ -153,6 +153,14 @@ header i {
     position: relative;
 }
 
+.details_menu p {
+    font-size: 14px;
+    width: 79%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .details_menu span {
     position: absolute;
     float: right;
