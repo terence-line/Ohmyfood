@@ -325,8 +325,9 @@ header {
     position: absolute;
     right: 20px;
     margin-bottom: 15px;
+    background-image: var(--blanc);
     opacity: 1;
-    z-index: 1;   
+    z-index: 1; 
 }
 
 .coeur_1:hover {
@@ -337,9 +338,11 @@ header {
     position: absolute;
     z-index: 2;
     right: 20px;
-    color: var(--couleur-secondaire);
-    margin-bottom: 15px; 
-    opacity: 0; 
+    background-image: var(--gradient);
+    background-clip: text;
+    
+    padding: 8px 2px;
+    opacity: 1; 
 } 
 
 .coeur_2:hover {
