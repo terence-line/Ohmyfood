@@ -133,6 +133,9 @@ header i {
     padding-bottom: 5px;
     border-bottom: 3px solid var(--couleur-tertiaire);
     width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /* détails menu */
@@ -144,7 +147,6 @@ header i {
     line-height: 23px;
     border-radius: 15px;
     box-shadow: 3px 6px 10px rgba(128, 128, 128, 0.5); 
-    cursor: pointer;
     animation-name: slide;
     animation-timing-function: ease;
     animation-fill-mode: both;
@@ -182,18 +184,26 @@ header i {
 
 .details_menu p {
     font-size: 14px;
-    width: 79%;
+    width: 65%;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis;   
 }
 
 .details_menu span {
     position: absolute;
     float: right;
     font-weight: bold;
-    right: 20px;
-    bottom: 0;
+    right: 0;
+    top: -15px;
+}
+
+.details_menu .tourner {
+    padding: 22px 20px;
+    margin-left: 10px;
+    border-radius: 0 15px 15px 0;
+    color: var(--blanc);
+    background-color: var(--couleur-tertiaire);
 }
 
 /* bouton commander */
