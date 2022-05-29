@@ -7,11 +7,6 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-#bloc_page h1 {
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-}
-
 #bloc_page h2 {
     font-size: 20px;
     font-weight: bold;    
@@ -167,25 +162,24 @@ header {
 }
 
 .texte {
-    line-height: 20px;
+    line-height: 23px;
     text-align: center;
     padding-top: 20px;
+    padding-left: 20px;
     height: 250px;
-    font-weight: bold;
     background: var(--gris-clair);
 }
 
-.texte h1 {
-    margin-left: 50px;
-    margin-right: 50px;
+.texte strong {
     margin-bottom: 15px;
     margin-top: 20px;
-    line-height: 25px;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .texte p {
-    padding-left: 20px;
     padding-bottom: 30px;
+    font-size: 16px;
 }
 
 .texte .explorer {
