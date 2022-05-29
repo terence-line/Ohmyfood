@@ -6,7 +6,7 @@
 
     /* photo restaurant */
     .photo_restaurant {
-        height: 600px;
+        height: 500px;
     }
 
     /* menu */
@@ -17,6 +17,10 @@
     #conteneur_menu {
         display: flex;
         justify-content: space-around;
+    }
+
+    .texte strong {
+        font-size: 30px;
     }
 
     .coeur_1, .coeur_2 {

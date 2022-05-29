@@ -133,9 +133,7 @@ header i {
     padding-bottom: 5px;
     border-bottom: 3px solid var(--couleur-tertiaire);
     width: 50px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+
 }
 
 /* détails menu */
@@ -191,16 +189,18 @@ header i {
 }
 
 .details_menu span {
-    position: absolute;
+    position: relative;
     float: right;
     font-weight: bold;
-    right: 0;
-    top: -15px;
+    right: 20px;
+    bottom: 20px;
 }
 
 .details_menu .tourner {
+    position: absolute;
+    right: -93px;
+    bottom: -12px;
     padding: 22px 20px;
-    margin-left: 10px;
     border-radius: 0 15px 15px 0;
     color: var(--blanc);
     background-color: var(--couleur-tertiaire);

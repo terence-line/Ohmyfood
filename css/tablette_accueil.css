@@ -15,17 +15,21 @@
     }
         
     .presentation input {
-        width: 200px;
+        width: 250px;
     }
 
-    /* bouton explorer */
+    /* explorer */
     .texte {
-        height: 230px;
+        height: 270px;
     }
+
+    .texte strong {
+        font-size: 25px;
+    }
+    
     .texte .explorer {
         font-size: 18px;
         width: 30%;
-        margin-top: 10px;
     }
 
     /* fonctionnement */
