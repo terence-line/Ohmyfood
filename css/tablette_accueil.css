@@ -19,9 +19,13 @@
     }
 
     /* bouton explorer */
+    .texte {
+        height: 230px;
+    }
     .texte .explorer {
         font-size: 18px;
         width: 30%;
+        margin-top: 10px;
     }
 
     /* fonctionnement */
