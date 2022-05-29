@@ -116,7 +116,7 @@ header i {
 .coeur_2 {
     position: absolute;
     z-index: 2;
-    right: 20px;
+    right: 5px;
     color: var(--couleur-secondaire);
     margin-bottom: 15px;
     opacity: 0;
