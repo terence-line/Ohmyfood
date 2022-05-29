@@ -81,7 +81,7 @@ header i {
 }
 
 /* menu */
-#menu {
+.menu {
     background: var(--gris-clair);
     border-radius: 40px 40px 0 0;
     margin-top: -100px;
