@@ -323,8 +323,7 @@ header {
 .coeur_1 { 
     position: absolute;
     right: 20px;
-    margin-bottom: 15px;
-    background-image: var(--blanc);
+    bottom: 25px;
     opacity: 1;
     z-index: 1; 
 }
@@ -336,7 +335,9 @@ header {
 .coeur_2 {
     position: absolute;
     z-index: 2;
-    right: 20px;
+    right: 10px;
+    bottom: 15px;
+    padding: 10px;
     color: transparent;
     background-image: linear-gradient(to bottom, var(--couleur-secondaire) 20%, var(--couleur-primaire) 100%);
     -webkit-background-clip: text;
@@ -346,7 +347,7 @@ header {
 
 .coeur_2:hover {
     opacity: 1;
-    transition: 400ms ease-in-out;
+    transition: 300ms ease-in-out;
 }
 
 /* footer */
