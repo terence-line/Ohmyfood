@@ -176,12 +176,6 @@ header i {
     }
 }
 
-.details_menu a {
-    text-decoration: none;
-    color: var(--noir);
-    position: relative;
-}
-
 .details_menu p {
     font-size: 14px;
     width: 76%;
