@@ -19,6 +19,10 @@
         justify-content: space-around;
     }
 
+    #menu h1 {
+        margin-left: 20px;
+    }
+
     .texte strong {
         font-size: 30px;
     }

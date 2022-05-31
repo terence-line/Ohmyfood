@@ -81,7 +81,7 @@ header i {
 }
 
 /* menu */
-.menu {
+#menu {
     background: var(--gris-clair);
     border-radius: 40px 40px 0 0;
     margin-top: -100px;
@@ -135,7 +135,6 @@ header i {
     padding-bottom: 5px;
     border-bottom: 3px solid var(--couleur-tertiaire);
     width: 50px;
-
 }
 
 /* détails menu */
@@ -151,6 +150,7 @@ header i {
     animation-timing-function: ease;
     animation-fill-mode: both;
     animation-duration: 2s;
+    overflow: hidden;
 }
 
 .menu_entrees .details_menu {
@@ -184,28 +184,39 @@ header i {
 
 .details_menu p {
     font-size: 14px;
-    width: 65%;
+    width: 76%;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;   
+    text-overflow: ellipsis; 
 }
 
 .details_menu span {
-    position: relative;
-    float: right;
+    display: block;
+    position: absolute;
     font-weight: bold;
-    right: 20px;
-    bottom: 20px;
+    right: -10px;
+    bottom: -15px;
+    margin-left: 20px;
+    transform: translateX(58%);  
+    transition: transform 280ms ease-in-out 50ms; 
 }
 
-.details_menu .tourner {
-    position: absolute;
-    right: -93px;
-    bottom: -12px;
-    padding: 22px 20px;
+.details_menu:hover, .details_menu span:hover {
+    transform: translateX(0);
+}
+
+.tourner {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 22px;
     border-radius: 0 15px 15px 0;
     color: var(--blanc);
     background-color: var(--couleur-tertiaire);
+}
+
+.tourner:hover {
+    transform: rotate(0deg);
 }
 
 /* bouton commander */
