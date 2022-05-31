@@ -34,6 +34,8 @@
 
     .menu_entrees, .menu_plats, .menu_desserts {
         width: 30%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .commander {
