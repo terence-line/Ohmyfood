@@ -178,27 +178,25 @@ header i {
     }
 }
 
-.details_menu h3:hover {
-    width: 76%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}    
-
-.details_menu p {
-    font-size: 14px;
+.details_menu h3 {
     width: 80%;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;    
-}
+    text-overflow: ellipsis;
+    transition: width ease 0.5s;
+} 
 
-.details_menu p:hover {
-    width: 30%;
+.details_menu p {
+    font-size: 14px;
+    width: 79%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; 
-    animation-fill-mode: forwards;   
+    transition: width ease 0.5s;   
+}
+
+.details_menu:hover p, .details_menu:hover h3 {
+    width: 61%;      
 }
 
 .details_menu span {
@@ -209,9 +207,8 @@ header i {
 }
 
 .details_menu:hover span {
-    width: 100px;
-    transform: translateX(0);
-    transition: transform 300ms ease;
+    transform: translateX(-70px);
+    transition: transform 0.5s ease-in-out 50ms;
 }
 
 .details_menu div {
@@ -228,7 +225,7 @@ header i {
 
 .details_menu:hover div {
     transform: translateX(-35px);
-    transition: transform 300ms ease;
+    transition: transform 0.5s ease-in-out 50ms;
 }
 
 .details_menu i {
@@ -236,7 +233,7 @@ header i {
     color: var(--blanc);
     right: 20px;
     top: 20px;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 
 .details_menu:hover i {
