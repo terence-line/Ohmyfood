@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     /* box-sizing est appliqué à tous les éléments */
 }
@@ -139,6 +139,7 @@ header i {
 
 /* détails menu */
 .details_menu {
+    position: relative;
     margin-top: 15px;
     background: var(--blanc);
     margin-right: 20px;
@@ -150,7 +151,8 @@ header i {
     animation-timing-function: ease;
     animation-fill-mode: both;
     animation-duration: 2s;
-    overflow: hidden;
+    cursor: pointer;
+    overflow: hidden;   
 }
 
 .menu_entrees .details_menu {
@@ -176,41 +178,70 @@ header i {
     }
 }
 
-.details_menu p {
-    font-size: 14px;
+.details_menu h3:hover {
     width: 76%;
     overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
+}    
+
+.details_menu p {
+    font-size: 14px;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;    
+}
+
+.details_menu p:hover {
+    width: 30%;
+    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis; 
+    animation-fill-mode: forwards;   
 }
 
 .details_menu span {
-    display: block;
     position: absolute;
     font-weight: bold;
-    right: -10px;
-    bottom: -15px;
-    margin-left: 20px;
-    transform: translateX(58%);  
-    transition: transform 280ms ease-in-out 50ms; 
+    right: 20px;
+    bottom: 15px; 
 }
 
-.details_menu:hover, .details_menu span:hover {
+.details_menu:hover span {
+    width: 100px;
     transform: translateX(0);
+    transition: transform 300ms ease;
 }
 
-.tourner {
+.details_menu div {
+    position: absolute;
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 10px;
-    padding: 22px;
+    height: 76px;
+    width: 75px;
+    right: -35px;
+    bottom: 0;
     border-radius: 0 15px 15px 0;
-    color: var(--blanc);
-    background-color: var(--couleur-tertiaire);
+    background: var(--couleur-tertiaire);
+    transform: translateX(40px);
+}    
+
+.details_menu:hover div {
+    transform: translateX(-35px);
+    transition: transform 300ms ease;
 }
 
-.tourner:hover {
-    transform: rotate(0deg);
+.details_menu i {
+    position: absolute;
+    color: var(--blanc);
+    right: 20px;
+    top: 20px;
+    transform: rotate(180deg);
+}
+
+.details_menu:hover i {
+    transform: rotate(360deg);
+    transition: transform 1s ease;
 }
 
 /* bouton commander */
