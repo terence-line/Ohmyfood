@@ -80,7 +80,7 @@ html, body {
     border-radius: 50%;
     border: 7px solid transparent;
     border-top-color: var(--couleur-primaire);
-    animation: spin 2s linear infinite;
+    animation: spin 1s linear infinite;
 }
 
 .loader::before, .loader::after {
